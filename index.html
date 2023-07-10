@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>INÍCIO</title>
+</head>
+<body>
+    <header class="cabecalho">
+ <nav class="menu">
+            <ul class="ul-menux">
+                <a href="./login.html">
+                    <li>
+                         <i class="bi bi-box-arrow-in-right"></i>
+                         </li>
+
+                </a>
+                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
+                  <input id="cep" type="text" placeholder="Digite seu CEP">
+                  <p class="nome-localizacao"></p> 
+                  <button onclick="consultaEndereco()">OK</button>
+                </li>
+                <a href="./index.html"><li> <i class="bi bi-house-fill"></i></li>  </a>          
+            </ul>
+
+        </nav>
+    </header>
+ <main>
+    <section id="mensagens-inicio">
+        <h1 id="nome-empresa"> <i class="bi bi-c-circle">OME-</i> <i class="bi bi-c-circle"></i>OME</h1>
+        <h2 id="mensagem">Olá, seja bem-vindo!</h2>
+        <h3  id="mensageem"> •VAMOS FAZER SEU PEDIDO<i><i class="bi bi-arrow-down"></i></i></h3>
+    </section>
+    <section  id="input">
+        <i class="bi bi-search-heart"></i>
+        <input id="input-text" type="text" placeholder="Digite seu pedido aqui"  > 
+        <button id="addBotao" class="meuInput-1" >PESQUISAR</button>
+        
+     </section>
+     <section id="categorias">
+         <ul id="categoria-ul">
+          <a href="" class="categoria-a">
+          <li class="categoria">REFEIÇÃO</li>
+            </a>
+            <a href="" class="categoria-a">
+            <li class="categoria">LANCHE</li>
+            </a>
+            <a href="" class="categoria-a">
+             <li class="categoria">SOBREMESA</li>
+            </a>
+            <a href="" class="categoria-a">
+             <li class="categoria">BEBIDAS</li>
+            </a>
+         </ul>
+     </section>
+ 
+    <section id="cards-produtos">
+       <div class="card-produto"> 
+        <a href="./carrinho.html">
+         <img src="./img/brasi.jpg" alt="Comida Brasileira" width="200"></a>
+         <h3 class="nome-produto">COMIDA BRASILEIRA</h3>
+       </div>
+       
+       <div class="card-produto"> 
+        <a href="./carrinho.html"> 
+        <img src="./img/mex.jpg" alt="Comida Mexicana" width="200"></a>
+         <h3 class="nome-produto">COMIDA MEXICANA</h3>
+       </div>
+       <div class="card-produto"> 
+        <a href="./carrinho.html">
+         <img src="./img/ita.jpg" alt="Comida Italiana" width="200"></a>
+         <h3 class="nome-produto">COMIDA ITALIANA</h3>
+       </div>
+      </section>
+      
+       <div id="ver-mais">
+         <a href="">Ver mais >></a>
+        
+       </div>
+      
+    <section id="avaliacao">
+     <p id="titulo-avaliacao">AVALIE NOSSO APP</p>
+     <i class="bi bi-hand-thumbs-up-fill"></i>
+     <i class="bi bi-hand-thumbs-down-fill"></i>
+     <span id="frase-avaliacao">Sua avaliação pode gerar cupons</span>
+    </section>
+    <footer id="footer" class="footer">
+     <ul class="footer-card">
+         <a href="index.html">
+            <li class="footer-item">
+             <i class="bi bi-house"></i>
+             <p class="nome-footer">HOME</p>
+             
+         </li>
+        </a>
+        <a href="./cadastro-usu.html">
+         <li class="footer-item">
+           <i class="bi bi-emoji-smile"></i>
+           <p  class="nome-footer">CADASTRO DE USUÁRIO</p>
+             
+         </li>
+        </a>
+        <a href="./cadastro-prod.html">
+         <li class="footer-item">
+             <i class="bi bi-upc-scan"></i>
+             <p  class="nome-footer">CADASTRO DE PRODUTO</p>
+             
+         </li>
+        </a>
+        <a href="./carrinho.html">
+         <li class="footer-item">
+            <i class="bi bi-cart"></i>
+            <p  class="nome-footer">CARRINHO</p>
+         </li>
+        </a>
+
+         <a href="./produto.html">
+            <li class="footer-item">
+                <i class="bi bi-stickies"></i>
+                <p class="nome-footer">PRODUTO</p>
+             </li>
+            </a>
+     </ul>
+    </footer>
+ 
+  </main>
+ 
+   
+ 
+ 
+
+ </main>
+   <script src="./avaliação.js"></script>
+<script src="./js.js/script-home.js"></script>
+</body>
+</html>

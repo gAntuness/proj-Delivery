@@ -1,0 +1,687 @@
+
+
+*{ 
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* unidade vh (a altura do viewport), o usuario vizualizar de qualquer aparelho */
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+:root {
+    --background-clean: beige;
+    --cor-da-empresa: red;
+}
+
+/* estilização header - nav */
+
+.cabecalho {
+    width: 100%;  
+    background-image: url(https://thumbs.dreamstime.com/z/summer-bbq-food-side-border-hot-dog-hamburger-buffet-top-down-table-scene-over-dark-slate-background-copy-space-188461475.jpg);
+   
+    }
+
+
+.menu .ul-menux{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+} 
+
+.ul-menux li{
+    list-style: none;
+    padding: 2rem;
+    color: antiquewhite;
+}
+
+.bi-box-arrow-in-right {
+          font-size: 40px;
+          color: var(--background-clean);
+}
+
+.bi-geo-alt {
+    font-size: 40px;
+    color: yellow;
+   
+}
+.bi-cart3{
+    font-size: 40px;
+    color: var(--background-clean);   
+}
+
+ul li#imagem-localizacao{
+    display: inline-flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: 5rem;
+    align-items:center;
+}
+
+.nome-localizacao {
+    font-size: 40px;
+    color: var(--background-clean);
+  
+}
+
+.bi-images {
+    font-size: 40px;
+    color: var(--background-clean);
+
+}
+
+    .bi-stickies-fill {
+        font-size: 40px;
+        color: var(--background-clean);
+    }
+    .bi-cart3{
+        font-size: 40px;
+        color: var(--background-clean);
+    }
+/* estilização do footer */
+
+.footer {
+    background-color: var(--background-clean);
+    margin-top: 5rem;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.footer-item{
+    margin: .5rem;
+}
+
+i.bi-house {
+    font-size: 40px;
+    color: var(--cor-da-empresa); }
+        
+.bi-house-fill{
+            font-size: 40px;
+            color: var(--background-clean); 
+        }
+
+i.bi-emoji-smile {
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-upc-scan{
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-cart{
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-stickies{
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+}
+
+.footer-card li{
+    list-style: none;
+}
+
+/* MAIN */
+
+section#mensagens-inicio{
+    padding: 1rem;
+    background-color: var(--background-clean);
+}
+ 
+#nome-empresa {
+    padding-left: 32rem;
+    margin-bottom: .5rem;
+    font-style: bold;
+    font-size: 50px;
+    color: rgb(255, 147, 147);
+}
+
+#mensagem {
+    color: rgb(116, 110, 110);
+    font-size: 25px;
+    padding-left: 36rem;
+}
+
+#mensageem {
+    color: rgb(116, 110, 110);
+    font-size: 18px;
+    padding-left: 5rem;
+}
+/* input */
+
+section#input {
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+i.bi-search-heart {
+    position: absolute;
+    color: rgb(46, 26, 26);
+    padding-top: .2rem;
+    padding-left: 3rem;
+    font-size: 30px;
+}
+
+#input-text {
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    padding: 1.2rem 0 1.3rem;
+    padding-left: 4rem;
+    border: 2mm ridge rgb(255, 147, 147);
+    text-align: center;
+}
+
+input:focus{
+    outline: 0;
+}
+
+/* seção da categoria*/
+
+section#categorias {
+    display: flex;
+}
+
+#categoria-ul{
+    display: flex;
+    justify-content: center;
+}
+.categoria-a{    
+    margin: 3rem 4rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+li.categoria{
+    margin: auto;
+   
+}
+
+.categoria {
+    margin: auto;
+    color: black;
+    list-style: none;
+    border: solid 5px rgb(255, 147, 147);
+    border-radius: 2rem;
+    width: 90%;
+    margin: 1.2rem;
+    padding: 2rem;
+    font-weight: 300;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+
+}
+.categoria:hover{
+      background-color: red;
+      border: 5px solid gray;
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px black;
+}
+
+/* card do produto */
+
+section#cards-produtos{
+    display: flex;
+}
+
+.card-produto{
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    align-content: center
+
+}
+
+.card-produto:hover{
+    box-shadow: inset 50px 0 0;
+    color: rgb(179, 218, 205);
+}
+
+.card-produto img{
+    width: 65%;
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
+
+h3.nome-produto{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 1.3rem;
+}
+
+/* ver mais */
+
+div#ver-mais{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-right: 2rem;
+    text-decoration: none;
+    margin: .8rem 2rem;
+    color: rgb(191, 166, 214);
+    }
+    
+    /* avaliaçao */
+
+    section#avaliacao{
+    border: .4rem outset plum;
+    text-align: center;
+    outline: .4rem solid --background-clean;
+    align-items: center;
+    box-shadow: 0 0 1rem gray;
+    margin: 1rem;
+    margin: auto;
+    padding: 1rem;
+    width: 50%;
+    font: bold 1rem sans-serif;
+}
+
+#titulo-avaliacao{
+    font-size: 40px;
+    color: pink;
+    text-shadow: 2px 2px black;
+}
+
+.bi-hand-thumbs-up-fill{
+    font-size: 40px;
+    color: rgb(255, 147, 147);
+}
+
+.bi-hand-thumbs-down-fill{
+    font-size: 40px;
+    color: rgb(255, 147, 147);
+}
+
+#frase-avaliacao{
+    font-size: 20px;
+}
+
+@media screen and (max-wight: 480px){
+    body{
+       width: 100%; 
+    }
+    header{
+        display: flex;
+    }
+    i.bi-geo-alt, .nome-localizacao, i.bi-card-image {
+        display: none;
+    }
+    ul.footer-card{
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }    
+}
+
+/* login */
+textarea:focus, input:focus{
+    outline: none;
+}
+a{
+    font-size: .8rem;
+
+}
+
+a:hover{
+    color: var(--background-clean);
+}
+
+#login{
+    background-color: var(--background-clean);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+    }
+
+label{
+    font-weight: bold;
+}
+
+input{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20%;
+}
+
+input:focus{
+    border-bottom: 2px solid blue;
+}
+#forgot-pass{
+    text-align: right;
+    display: block;
+    margin-top: -4rem;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: whitesmoke;
+    background-color: blue;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    transition: .5s;
+}
+
+#social-container, #social-container p{
+    margin-bottom: 20px;
+}
+
+#social-container i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: antiquewhite;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.bi-facebook{
+    background-color: blue;
+    font-size: 30px;
+}
+
+.bi-instagram{
+    background-color: rebeccapurple;
+    font-size: 30px;
+}    
+
+#resistrar p{
+     margin-bottom: 10px;
+    }
+
+
+    #login-ri{
+        padding: 2rem;
+        color: rgb(255, 147, 147);
+        font-size: large;
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+
+/* cadastro usuário */
+
+#login-ca{
+    color: rgb(255, 147, 147);
+    font-size: large;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    }
+    
+    input[type="radio"] {
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    margin: -23px;
+    
+}
+
+#cada{
+    padding: 3rem;
+}
+
+#cada-1{
+    padding: 1rem;
+}
+
+
+/* produtos */
+
+#cabe{
+    display: flex;
+}
+
+.bi-arrow-left-circle{
+    font-size: 30px;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+    
+    color: black;
+}
+
+i.bi-heart-fill{
+    font-size: 30px;
+    margin-left: 76rem;
+    color: black;
+}
+
+i.red{
+    color: red;
+}
+
+.imagem-2{
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    align-content: center
+
+}
+
+.comi{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: large 25px;
+    padding: 2rem;
+}
+ 
+.unidade {
+text-align: center; 
+    display: inline-block;
+align-items: center;
+}
+
+.bi-dash-square-dotted{
+     font-size: 25px;
+    color: black;
+    }
+
+.bi-plus-square-dotted{
+    font-size: 25px;
+    color: black;  
+    padding-right: 43px; 
+
+}
+
+    .bi-dash-square{
+        font-size: 25px;
+    color: black; 
+    }
+    .bi-plus-square{
+        font-size: 25px;
+            color: black;
+        padding-left: 2.8rem; }
+
+.preco{
+    padding: 2rem;
+}
+.imagem-2:hover{
+    background-color: red;
+    border: 5px solid red;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px black;
+}
+
+    .comi:hover{
+        background-color: plum;
+        border: 2px solid gray;
+        transform: scale(1.0);
+    box-shadow: 0 5px 15px black; }
+
+    .p {
+        color: yellowgreen;
+        font-weight: bold;
+        font-size: 20px;
+    }
+.x{
+    font-weight: bold;
+  padding: 1rem;
+}
+    .bi-cart-plus{
+        font-size: 25px;
+        padding-right: 1rem;
+    }
+
+        .buto{
+            font-size: 20px;
+        }
+
+        /* carrinho*/
+
+        .bi-chevron-double-left{
+        font-size: 30px;
+        padding-left: 2rem;
+        }
+        .bi-cart-check{
+        font-size: 30px;
+        padding-left: 32rem;
+        }
+        #carro{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding: 2rem;
+        }
+
+        .carrin{
+        align-items: center;
+        text-align: center;
+        padding-left: 30rem;
+        color: rgb(65, 65, 28);
+        text-align: justify;
+        font-style: var(--background-clean);
+        font-weight: bold;
+        font-size: 30px;
+        }
+
+        .bi-trash3{
+            padding-left: 1rem;
+            color: black;
+            font-size: 24px;
+        }
+    
+        .place{
+      display: flex;
+      align-items: baseline;
+    }
+
+    .t{
+        font-size: 23px;
+        color: red;
+    font-weight: bold;    }
+     
+    #produto-car{
+        background-color: var(--background-clean);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    }
+    
+ .card-teste{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    width: 50%;
+    background-color: rgb(255, 147, 147);
+    border: black 3px solid;
+    border-radius: 2rem;
+    z-index: 999;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+ .bi-plus-square-dotted{
+    padding-left: 2.8rem;
+ }
+
+ #cep{
+    padding: 2px;
+    margin: 2rem;
+    
+ }
+
+    .nome-localizacao{
+        padding-right: 2rem;
+        color: #ffff00;
+        font-size: 30px;
+    }

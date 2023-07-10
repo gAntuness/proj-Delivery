@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: Arial, Helvetica;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://thumbs.dreamstime.com/b/escalada-nas-montanhas-71027492.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #ffffff35;
+    backdrop-filter: blur(15px);
+    width: 700px;
+    height: 300px;
+    border-radius: .4rem;
+
+ }
+
+ section h1{
+    font-size: 3.3rem;
+    color: crimson;
+    text-shadow: black 2px 2px;
+    text-decoration: blueviolet;
+   
+ }
+
+ button#get-advice{
+    font-size: 20px;
+    width: 190px;
+    height: 70px;
+    border-width: 6px;
+   border-top-left-radius: 18px;
+   border-top-right-radius: 18px;
+   border-bottom-right-radius: 18px;
+   border-bottom-left-radius: 18px;
+    border-color: cornsilk;
+    box-shadow: inset 0px 1px 0px 0px pink;
+    text-shadow: inset 0px 1px 0px rgb(202, 147, 147);
+    background: linear-gradient(rgb(97, 60, 66),crimson);
+        cursor: pointer; 
+   }
+
+   p#advice {
+    font-size: 1.7rem;
+     text-align: center;
+     color: black;
+      text-shadow: black  1.2px  1.3px;
+              font-weight: 600;
+     }
+ 

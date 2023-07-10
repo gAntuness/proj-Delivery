@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menux">
+                <a href="./produto.html">
+                <li><i class="bi bi-stickies-fill"></i></li>
+                </a>
+                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
+                    <input id="cep" type="text" placeholder="Digite seu CEP">
+                    <p class="nome-localizacao"></p> 
+                    <button onclick="consultaEndereco()">OK</button></li>
+                <a href="./index.html"><li> <i class="bi bi-house-fill"></i></li>  </a>  
+            </ul>
+        </nav>
+    </header>
+    <section id="mensagens-inicio">
+        <h1 id="nome-empresa"> <i class="bi bi-c-circle">OME-</i> <i class="bi bi-c-circle"></i>OME</h1>
+    </section>
+    <section id="mensagem-ok" class="mensagem-ok"> </section>
+        <div id="login">
+            <h1 id="login-r">LOGIN</h1>
+            <form action="">
+            <label for="email">LOGIN:</label>
+            <input id="meuInput" type="email" placeholder="Digite seu e-mail">
+            <label for="password">SENHA:</label>
+            <input id="meuInput-1" type="password" placeholder="Digite sua senha">
+            <a href="./esqueceu-senha.html" id="forgot-pass">Esqueceu a senha?</a>
+            <input id="addBotao" type="submit" value="LOGIN">
+            </form>       
+        <div id="social-container">
+            <p>Ou entre pelas suas redes sociais</p>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+        <div id="resistrar">
+            <p>Ainda não tem uma conta?</p>
+            <a href="./cadastro-usu.html">Cadastrar</a>
+
+        </div>
+        </div>
+    
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="index.html">
+               <li class="footer-item">
+                <i class="bi bi-house"></i>
+                <p class="nome-footer">HOME</p>
+                
+            </li>
+           </a>
+           <a href="./cadastro-usu.html">
+            <li class="footer-item">
+              <i class="bi bi-emoji-smile"></i>
+              <p  class="nome-footer">CADASTRO DE USUÁRIO</p>
+                
+            </li>
+           </a>
+           <a href="./cadastro-prod.html">
+            <li class="footer-item">
+                <i class="bi bi-upc-scan"></i>
+                <p  class="nome-footer">CADASTRO DE PRODUTO</p>
+                
+            </li>
+           </a>
+           <a href="./carrinho.html">
+            <li class="footer-item">
+               <i class="bi bi-cart"></i>
+               <p  class="nome-footer">CARRINHO</p>
+            </li>
+           </a>
+   
+            <a href="./produto.html">
+               <li class="footer-item">
+                   <i class="bi bi-stickies"></i>
+                   <p class="nome-footer">PRODUTO</p>
+                </li>
+               </a>
+        </ul>
+       </footer>
+   
+<script src="./js.js/script.js"></script>
+    </body>
+       </html>

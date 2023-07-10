@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <title>PRODUTO</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+                   <ul class="ul-menux">
+                       <a href="./carrinho.html">
+                           <li>
+                            <i class="bi bi-cart3"></i>
+                                </li>
+                       </a>
+                       <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i> <input id="cep" type="text" placeholder="Digite seu CEP">
+                        <p class="nome-localizacao"></p> 
+                        <button onclick="consultaEndereco()">OK</button></li>
+                       
+                       <a href="./index.html"><li> <i class="bi bi-house-fill"></i></li>  </a>            
+                   </ul>
+       
+               </nav>
+           </header>
+           
+           <section id="mensagens-inicio">
+            <h1 id="nome-empresa"> <i class="bi bi-c-circle">OME-</i> <i class="bi bi-c-circle"></i>OME</h1>
+        </section>
+        
+    <section id="cabe">
+      <a href="#">  <i class="bi bi-arrow-left-circle"></i></a>
+        <i class="bi bi-heart-fill"></i>
+    </section>
+
+    <section id="login">
+        <h1 class="comi" >COMIDA BRASILEIRA</h1>
+        <p>O tão conhecido Bife com Fritas consiste no delicioso corte de contrafilé acebolado, batata frita, arroz, feijão e ainda com a opção de vinagrete ou salada verde.</p>
+       <div class="imagem-2" >
+        <img src="./img/brasi.jpg" alt="Comida Brasileira" width="260">
+        
+       </div> 
+       <div class="unidade">
+       <i class="bi bi-dash-square-dotted"></i>
+     <p class="quantidade"> 1 </p> 
+      <i class="bi bi-plus-square-dotted"></i>
+    </div>  
+    
+    <div class="preco">
+        <p class="p">Preço Unitário</p>
+        <p class="x">R$ 20,00</p>
+        <p class="p">Preço Total</p>
+        <p class="x">R$ 20,00</p>
+       </div> 
+       <div>
+       <a href="#"> <i class="bi bi-cart-plus"></i></a>
+        <button class="buto">Adicionar ao carrinho</button>
+       </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="index.html">
+               <li class="footer-item">
+                <i class="bi bi-house"></i>
+                <p class="nome-footer">HOME</p>
+                
+            </li>
+           </a>
+           <a href="./cadastro-usu.html">
+            <li class="footer-item">
+              <i class="bi bi-emoji-smile"></i>
+              <p  class="nome-footer">CADASTRO DE USUÁRIO</p>
+                
+            </li>
+           </a>
+           <a href="./cadastro-prod.html">
+            <li class="footer-item">
+                <i class="bi bi-upc-scan"></i>
+                <p  class="nome-footer">CADASTRO DE PRODUTO</p>
+                
+            </li>
+           </a>
+           <a href="./carrinho.html">
+            <li class="footer-item">
+               <i class="bi bi-cart"></i>
+               <p  class="nome-footer">CARRINHO</p>
+            </li>
+           </a>
+   
+            <a href="./produto.html">
+               <li class="footer-item">
+                   <i class="bi bi-stickies"></i>
+                   <p class="nome-footer">PRODUTO</p>
+                </li>
+               </a>
+        </ul>
+       </footer>
+    
+    
+      
+      <script src="./js.js/produ.js"></script>
+   
+   </body>
+   </html>
